@@ -18,4 +18,4 @@ phases:
       - echo "Uploading to S3..."
       - aws s3 cp deployment_package.zip s3://lamdba-zip/
       - echo "Updating lambda functions via S3..."
-      - aws lambda update-function-code --function-name github-to-lambda --s3-bucket lambda-builds-zip --s3-key deployment_package.zip
+      - aws lambda update-function-code --function-name github-to-lambda --s3-bucket lamdba-zip --s3-key deployment_package.zip
